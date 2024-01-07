@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>attayde</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .circle-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            display: block; /* Torna a imagem um bloco para ajustar margens automaticamente */
+            margin: auto; /* Define as margens automáticas para centralizar */
+        }
+        .center-text {
+            text-align: justify;
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -27,14 +45,13 @@
         </ul>
     </nav>
     <header>
-        <div class="center">
-            <img src="./img/attayde.png"></img>
-        </div>
-        <h2>Ramon Attayde</h2>
+        <img src="./img/attayde.png"class="circle-img"></img>
+        <h2 class="center">Ramon Attayde, DSc</h2>
     </header>
 
     <main>
         <section>
+            <div class="center-text">
             <p>
                 Docente adjunto IV pela UERJ (Universidade do Estado do Rio de Janeiro),
                 possui licenciatura em matemática pela própria UERJ, 
@@ -47,6 +64,8 @@
                 redes neurais.
 
             </p>
+            </div>
+
         </section>
     </main>
     

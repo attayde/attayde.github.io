@@ -16,13 +16,3 @@ a {
     color: blue;
     text-decoration: none;
 }
-
-img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-}
-
-.center {
-    text-align: center;
-}
