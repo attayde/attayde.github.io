@@ -9,28 +9,36 @@
 
     <style>
         .projetos {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 30px auto;
             padding: 0 20px;
         }
 
-        .projeto {
-            margin-bottom: 28px;
+        .tabela-container {
+            overflow-x: auto;
         }
 
-        .projeto h3 {
-            margin: 0 0 8px 0;
-            font-size: 1.1rem;
-            font-weight: 600;
+        .tabela-projetos {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
         }
 
-        .projeto p {
-            margin: 4px 0;
-            line-height: 1.5;
+        .tabela-projetos th,
+        .tabela-projetos td {
+            padding: 12px 10px;
+            text-align: left;
+            vertical-align: top;
         }
 
-        .projeto strong {
-            font-weight: 600;
+        .tabela-projetos th {
+            font-weight: 500;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tabela-projetos td {
+            border-bottom: 1px solid #eee;
+            line-height: 1.45;
         }
     </style>
 </head>
@@ -41,40 +49,74 @@
 
         <h2>Iniciação Científica</h2>
 
-        <div class="projeto">
-            <h3>1. Estudo de métodos de diferenças finitas e campo de direções para soluções de equações diferenciais ordinárias</h3>
-            <p><strong>Bolsista:</strong> Maria Eduarda Armond de Moraes Fontes</p>
-            <p><strong>Financiamento:</strong> CNPq · <strong>Duração:</strong> 1 ano · <strong>Conclusão:</strong> 2022</p>
-        </div>
+        <div class="tabela-container">
 
-        <div class="projeto">
-            <h3>2. Estudo de métodos de diferenças finitas e campo de direções para soluções de equações diferenciais ordinárias</h3>
-            <p><strong>Bolsista:</strong> Julia Bueno Condal</p>
-            <p><strong>Financiamento:</strong> CNPq · <strong>Duração:</strong> 1 ano · <strong>Conclusão:</strong> 2023</p>
-        </div>
+            <table class="tabela-projetos">
 
-        <div class="projeto">
-            <h3>3. Aproximações numéricas para resolver equações diferenciais ordinárias e aplicações nas engenharias metalúrgica e de materiais</h3>
-            <p><strong>Bolsista:</strong> Letícia Chagas de Araujo Silva</p>
-            <p><strong>Duração:</strong> 1 ano · <strong>Conclusão:</strong> 2019</p>
-        </div>
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Bolsista</th>
+                        <th>Financiamento</th>
+                        <th>Duração</th>
+                        <th>Conclusão</th>
+                    </tr>
+                </thead>
 
-        <div class="projeto">
-            <h3>4. Aplicação dos métodos de diferenças finitas para obter soluções de equações de difusão aplicadas às engenharias de materiais e metalurgia</h3>
-            <p><strong>Bolsista:</strong> Lucas de Souza Velloso Zampier</p>
-            <p><strong>Duração:</strong> 1 ano · <strong>Conclusão:</strong> 2019</p>
-        </div>
+                <tbody>
 
-        <div class="projeto">
-            <h3>5. Estudo da modelagem matemática com equações diferenciais aplicadas a processos que envolvem transferência de massa</h3>
-            <p><strong>Bolsista:</strong> Mayhara Bernardino da Silva</p>
-            <p><strong>Duração:</strong> 1 ano · <strong>Conclusão:</strong> 2018</p>
-        </div>
+                    <tr>
+                        <td>Estudo de métodos de diferenças finitas e campo de direções para soluções de equações diferenciais ordinárias</td>
+                        <td>Maria Eduarda Armond de Moraes Fontes</td>
+                        <td>CNPq</td>
+                        <td>1 ano</td>
+                        <td>2022</td>
+                    </tr>
 
-        <div class="projeto">
-            <h3>6. Modelagem da reação de sulfonação na síntese de membranas híbridas orgânico/inorgânico para melhorar as propriedades protônicas do polieletrólito</h3>
-            <p><strong>Bolsista:</strong> Mauricio dos Santos Vasconcellos</p>
-            <p><strong>Duração:</strong> 1 ano · <strong>Conclusão:</strong> 2015</p>
+                    <tr>
+                        <td>Estudo de métodos de diferenças finitas e campo de direções para soluções de equações diferenciais ordinárias</td>
+                        <td>Julia Bueno Condal</td>
+                        <td>CNPq</td>
+                        <td>1 ano</td>
+                        <td>2023</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aproximações numéricas para resolver equações diferenciais ordinárias e aplicações nas engenharias metalúrgica e de materiais</td>
+                        <td>Letícia Chagas de Araujo Silva</td>
+                        <td>—</td>
+                        <td>1 ano</td>
+                        <td>2019</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aplicação dos métodos de diferenças finitas para obter soluções de equações de difusão aplicadas às engenharias de materiais e metalurgia</td>
+                        <td>Lucas de Souza Velloso Zampier</td>
+                        <td>—</td>
+                        <td>1 ano</td>
+                        <td>2019</td>
+                    </tr>
+
+                    <tr>
+                        <td>Estudo da modelagem matemática com equações diferenciais aplicadas a processos que envolvem transferência de massa</td>
+                        <td>Mayhara Bernardino da Silva</td>
+                        <td>—</td>
+                        <td>1 ano</td>
+                        <td>2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Modelagem da reação de sulfonação na síntese de membranas híbridas orgânico/inorgânico para melhorar as propriedades protônicas do polieletrólito</td>
+                        <td>Mauricio dos Santos Vasconcellos</td>
+                        <td>—</td>
+                        <td>1 ano</td>
+                        <td>2015</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </div>
 
     </main>
@@ -82,4 +124,3 @@
 </body>
 
 </html>
-    
