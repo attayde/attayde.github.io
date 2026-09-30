@@ -1,32 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pesquisa_publicacoes</title>
+    <title>Proceedings — CNMAC</title>
     <link rel="stylesheet" href="index.css">
 
+    <style>
+        .publicacoes {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .tabela-container {
+            overflow-x: auto;
+        }
+
+        .tabela-publicacoes {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .tabela-publicacoes th,
+        .tabela-publicacoes td {
+            padding: 12px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .tabela-publicacoes th {
+            font-weight: 500;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tabela-publicacoes td {
+            border-bottom: 1px solid #eee;
+            line-height: 1.5;
+        }
+
+        .tabela-publicacoes .ano {
+            width: 70px;
+            white-space: nowrap;
+        }
+
+        .tabela-publicacoes .autores {
+            width: 220px;
+        }
+    </style>
 </head>
-<header>
-    <h2> Proceeding Series</h2>
-    <h3 style="display:inline;">1 - </h3><span>(2023), CONDAL,J.B.; SOUZA, R. A. B. Estudo da implementação de Redes Neurais Informadas pela Física (PINN) para obtenção de soluções de equações diferenciais ordinárias;</span>
-    <br>
-    <br>
-    <h3 style="display:inline;">2 - </h3><span>(2023), FONTES, M. E. A. M. ; SOUZA, R. A. B. Avaliação das soluções obtidas por redes neurais e pelos métodos de Euler (explícito e implícito), em equações diferenciais ordinárias de 1ª ordem;</span>
-    <br>
-    <br>
-    <h3 style="display:inline;">3 - </h3><span>(2022), FONTES, M. E. A. M. ; SOUZA, R. A. B. Estudo comparativo dos métodos dos Trapézios e de Euler (explícito e implícito), na obtenção de soluções numéricas de EDO de 1ª ordem;</span>
-    <br>
-    <br>
-    <h3 style="display:inline;">4 - </h3><span>(2021), ZAMPIER, L. S. V. ; SOUZA, R. A. B. Estudo da eficiência do método de diferenças finitas de Crank-Nicolson, na obtenção de soluções numéricas para equação de difusão;</span>
-    <br>
-    <br>
-    <h3 style="display:inline;">5 - </h3><span>(2021), SILVA, L. C. A. ; SOUZA, R. A. B.  Avaliação da estabilidade dos métodos de Euler e Runge-Kutta apliacados em equação diferencial ordinária de 1ª ordem;</span>
-    <br>
-    <br>
-    <h3 style="display:inline;">6 - </h3><span>(2020), SILVA, M. B. ; SOUZA, R. A. B. Avaliação dos métodos de diferenças finitas explícito e implícito na equação de calor a partir da comparação das soluções analítica e numérica com uso do teorema de Lax;</span>
-</head>
+
 <body>
-    
+
+    <main class="publicacoes">
+
+        <h2>Proceedings — Congresso Nacional de Matemática Aplicada e Computacional (CNMAC)</h2>
+
+        <div class="tabela-container">
+
+            <table class="tabela-publicacoes">
+
+                <thead>
+                    <tr>
+                        <th class="ano">Ano</th>
+                        <th class="autores">Autores</th>
+                        <th>Trabalho</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="ano">2023</td>
+                        <td class="autores">J. B. Condal; R. A. B. Souza</td>
+                        <td>
+                            Estudo da implementação de Redes Neurais Informadas pela Física (PINN)
+                            para obtenção de soluções de equações diferenciais ordinárias.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ano">2023</td>
+                        <td class="autores">M. E. A. M. Fontes; R. A. B. Souza</td>
+                        <td>
+                            Avaliação das soluções obtidas por redes neurais e pelos métodos de Euler
+                            (explícito e implícito), em equações diferenciais ordinárias de 1ª ordem.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ano">2022</td>
+                        <td class="autores">M. E. A. M. Fontes; R. A. B. Souza</td>
+                        <td>
+                            Estudo comparativo dos métodos dos Trapézios e de Euler
+                            (explícito e implícito), na obtenção de soluções numéricas de EDO de 1ª ordem.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ano">2021</td>
+                        <td class="autores">L. S. V. Zampier; R. A. B. Souza</td>
+                        <td>
+                            Estudo da eficiência do método de diferenças finitas de Crank-Nicolson,
+                            na obtenção de soluções numéricas para equação de difusão.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ano">2021</td>
+                        <td class="autores">L. C. A. Silva; R. A. B. Souza</td>
+                        <td>
+                            Avaliação da estabilidade dos métodos de Euler e Runge-Kutta
+                            aplicados em equação diferencial ordinária de 1ª ordem.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ano">2020</td>
+                        <td class="autores">M. B. Silva; R. A. B. Souza</td>
+                        <td>
+                            Avaliação dos métodos de diferenças finitas explícito e implícito
+                            na equação de calor a partir da comparação das soluções analítica
+                            e numérica com uso do teorema de Lax.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
 </body>
+
 </html>
